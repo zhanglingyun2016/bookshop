@@ -1,0 +1,52 @@
+Django项目终端创建
+    1.conda env list # 查询虚拟环境     beijing_tuling
+    1.conda create -n 环境名称 python=3.6  #创建虚拟环境
+    2.选中虚拟环境  conda activate beijing_tuling
+    3.----pip install django==1.8 #1.8版本
+    4.创建一个工程：
+       django-admin startproject tulingxueyuan
+       地址：C:\Users\Java02-张凌云\tulingxueyuan
+
+    5.启动项目，终端跳到项目名称路径
+        启动manage.py文件
+        python manage.py runserver
+
+    6.创建应用：
+        创建name的包，与manage.py同一级
+        python manage.py startapp name
+        ---------------------------------
+           home包创建的自定义包名
+           admin.py 自带的模块后台配置文件
+           models.py  模型文件
+           tests.py  测试文件
+           views.py  视图函数文件
+
+
+
+------------------------------------------------------------
+文件作用：
+    manage.py  项目管理文件  单入口文件
+    web  和项目名称相同的文件，用于存放相关配置文件
+    setting.py  项目的配置文件
+    urls  项目的根路由文件
+    wsgi.py  通用网关接口服务文件
+    db.sqlite3  Django框架默认使用的数据库文件
+
+
+
+------------------------------------------------------------
+启动服务：
+    终端切换到web/manage.py文件执行命令
+    python3 manage.py runserver
+
+
+
+
+
+
+
+
+
+
+
+
